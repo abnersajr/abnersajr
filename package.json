@@ -1,0 +1,12 @@
+{
+  "name": "abnersajr",
+  "version": "1.0.0",
+  "description": "CLI which display an about me",
+  "repository": {
+
+  },
+  "license": "MIT",
+  "bin": {
+    "abnersajr": "index.js"
+  }
+}
