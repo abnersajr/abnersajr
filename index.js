@@ -1,4 +1,9 @@
 #!/usr/bin/env node
+
+const clearAnyConsole = require("clear-any-console")
+
+clearAnyConsole();
+
 console.log(`
 Abner Soares Alves Junior
 
