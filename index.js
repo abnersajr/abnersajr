@@ -2,6 +2,7 @@
 const pkgJSON = require("./package.json");
 const welcome = require("cli-welcome");
 const chalk = require("chalk");
+const sym = require("log-symbols");
 
 welcome({
   title: pkgJSON.name,
@@ -27,4 +28,6 @@ Working at Busbud
 `)}
 😸 ${githubColor.bold(` Github `)}: ${chalk(`https://github.com/abnersajr`)}
 🚌 ${bbColor.bold(` Busbud `)}: https://busbud.com
+
+${sym.success + chalk.dim(` Use this CLI as an inspiration for your own`)}
 `)
