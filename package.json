@@ -1,7 +1,7 @@
 {
   "name": "abnersajr",
   "version": "1.0.0",
-  "description": "CLI which display an about me",
+  "description": "This is a summary about me using a CLI.",
   "author": {
     "name": "Abner Soares Alves Junior",
     "email": "abnersajr@gmail.com",
