@@ -2,34 +2,26 @@
 const meow = require("meow");
 const init = require("./utils/init");
 const data = require("./utils/data");
-
-const helpText = `RUN: npx abnersajr`;
-const defaultOptions = {
-	flags: {
-		social: {
-			type: "boolean",
-			default: true,
-		},
-		ad: {
-			type: "boolean",
-			default: true,
-		},
-	},
-};
-
-const cli = meow(helpText, defaultOptions);
+const cli = require("./utils/cli");
+const debug = require("./utils/debug");
 
 (async () => {
-	init();
-	console.log(data.name);
-	console.log(data.bio);
+	const { input, flags } = cli;
+	init(flags.minimal);
+
+	input.includes("help") && cli.showHelp(0);
+
+	console.log(data.name + `\n`);
+	flags.bio && console.log(data.bio + `\n`);
 	console.log(data.work + `\n`);
 
-	if (cli.flags.social) {
-		console.log(data.gh + `\n`);
+	if (flags.social) {
+		console.log(data.gh);
 	}
 
-	if (cli.flags.ad) {
-		console.log(data.ad + `\n`);
+	if (flags.ad) {
+		data.ad();
 	}
+
+	debug(flags.debug, cli);
 })();
