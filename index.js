@@ -23,7 +23,8 @@ ${nameColor.bold(`Abner Soares Alves Junior`)}
 ${chalk(`
 Software Engineer from 🇧🇷
 Currently living in Montreal 🇨🇦
-and working at ${bbColor.bold(` Busbud `)}: 🚌 https://busbud.com
+Working at Busbud
 `)}
 😸 ${githubColor.bold(` Github `)}: ${chalk(`https://github.com/abnersajr`)}
+🚌 ${bbColor.bold(` Busbud `)}: https://busbud.com
 `)
