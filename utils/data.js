@@ -1,11 +1,11 @@
-const c = require("ansi-colors");
+const { bgYellow, bgGreen, bold, dim } = require("kleur");
 const alert = require("cli-alerts");
 
-const bbColor = c.bold.bgYellow;
-const nameColor = c.bold.bgYellow;
-const githubColor = c.bold.bgGreen;
+const bbColor = bold().bgYellow;
+const nameColor = bold().bgYellow;
+const githubColor = bold().bgGreen;
 
-const name = `${nameColor.bold(`Abner Soares Alves Junior`)}`;
+const name = `${nameColor(`Abner Soares Alves Junior`)}`;
 
 const bio = `${`Software Engineer from 🇧🇷
 Currently living in Montreal 🇨🇦`}`;
@@ -16,7 +16,7 @@ const gh = `😸 ${githubColor(` Github `)}: ${`https://github.com/abnersajr`}`;
 
 const ad = () =>
 	alert({
-		msg: c.dim(`Use this CLI as an inspiration for your own`),
+		msg: dim(`Use this CLI as an inspiration for your own`),
 		type: "success",
 		name: "DONE",
 	});

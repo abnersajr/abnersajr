@@ -23,10 +23,10 @@
     "abnersajr"
   ],
   "dependencies": {
-    "ansi-colors": "^4.1.3",
     "cli-alerts": "^1.2.2",
     "cli-welcome": "2.2.2",
     "enquirer": "^2.3.6",
+    "kleur": "^4.1.5",
     "meow": "^9.0.0",
     "node-fetch": "^3.3.0"
   }
