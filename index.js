@@ -4,6 +4,7 @@ const init = require("./utils/init");
 const data = require("./utils/data");
 const cli = require("./utils/cli");
 const debug = require("./utils/debug");
+const stats = require("./utils/stats");
 
 (async () => {
 	const { input, flags } = cli;
@@ -14,6 +15,8 @@ const debug = require("./utils/debug");
 	console.log(data.name + `\n`);
 	flags.bio && console.log(data.bio + `\n`);
 	console.log(data.work + `\n`);
+
+	await stats();
 
 	if (flags.social) {
 		console.log(data.gh);
