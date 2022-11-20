@@ -2,8 +2,13 @@
   "name": "abnersajr",
   "version": "1.0.0",
   "description": "CLI which display an about me",
+  "author": {
+    "name": "Abner Soares Alves Junior",
+    "email": "abnersajr@gmail.com",
+    "url": "https://github.com/abnersajr/abnersajr"
+  },
   "repository": {
-    "homepage": "https://github.com/abnersajr/abnersajr"
+    "homepage": "https://github.com/abnersajr/abnersajr#readme"
   },
   "license": "MIT",
   "bin": {
@@ -11,5 +16,10 @@
   },
   "dependencies": {
     "cli-welcome": "2.2.2"
-  }
+  },
+  "main": "index.js",
+  "keywords": [
+    "cli",
+    "abnersajr"
+  ]
 }

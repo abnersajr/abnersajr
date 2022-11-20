@@ -1,6 +1,14 @@
 # abnersajr
 
-Small summary about me in one CLI.
+Get to know Abner Soares Alves Junior, or @abnersajr.
+
+## Usage
+
+To use this CLI run the following command:
+
+```bash
+npx abnersajr
+```
 
 ## License
 
