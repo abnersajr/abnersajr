@@ -1,28 +1,28 @@
 const meow = require("meow");
-const { green, yellow, cyan, dim } = require("chalk");
+const c = require("ansi-colors");
 
 const helpText = `
   Usage
-    ${green(`npx abnersajr`)} ${yellow(`[--option]`)} ${cyan(`<command>`)}
+    ${c.green(`npx abnersajr`)} ${c.yellow(`[--option]`)} ${c.cyan(`<command>`)}
 
 	Options
-    ${yellow(`bio`)}            Print the bio info ${dim(`(DEFAULT: true)`)}
-    ${yellow(`--no-bio`)}       Don't print the bio info
-    ${yellow(`social`)}         Print the social info ${dim(`(DEFAULT: true)`)}
-    ${yellow(`--no-social`)}    Don't print the social info
-    ${yellow(`ad`)}             Print the ad info ${dim(`(DEFAULT: true)`)}
-    ${yellow(`--no-ad`)}        Don't print the ad info
-    ${yellow(`-d, --debug`)}    Print the debug info
-    ${yellow(`-v, --version`)}  Print the version
-    ${yellow(`-m, --minimal`)}  Print a minimal version
+    ${c.yellow(`bio`)}            Print the bio info ${c.dim(`(DEFAULT: true)`)}
+    ${c.yellow(`--no-bio`)}       Don't print the bio info
+    ${c.yellow(`social`)}         Print the social info ${c.dim(`(DEFAULT: true)`)}
+    ${c.yellow(`--no-social`)}    Don't print the social info
+    ${c.yellow(`ad`)}             Print the ad info ${c.dim(`(DEFAULT: true)`)}
+    ${c.yellow(`--no-ad`)}        Don't print the ad info
+    ${c.yellow(`-d, --debug`)}    Print the debug info
+    ${c.yellow(`-v, --version`)}  Print the version
+    ${c.yellow(`-m, --minimal`)}  Print a minimal version
 
 	Commands
-    ${cyan(`help`)}           Print CLI help information
+    ${c.cyan(`help`)}           Print CLI help information
 
   Examples
-    ${green(`npx abnersajr`)} ${yellow(`--no-social`)}
-    ${green(`npx abnersajr`)} ${yellow(`--no-ad`)}
-    ${green(`npx abnersajr`)} ${cyan(`help`)}
+    ${c.green(`npx abnersajr`)} ${c.yellow(`--no-social`)}
+    ${c.green(`npx abnersajr`)} ${c.yellow(`--no-ad`)}
+    ${c.green(`npx abnersajr`)} ${c.cyan(`help`)}
 
 `;
 
