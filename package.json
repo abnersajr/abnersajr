@@ -14,14 +14,17 @@
   "bin": {
     "abnersajr": "index.js"
   },
-  "dependencies": {
-    "chalk": "^4.1.2",
-    "cli-welcome": "2.2.2",
-    "log-symbols": "^4.1.0"
-  },
+  "files": [
+    "index.js"
+  ],
   "main": "index.js",
   "keywords": [
     "cli",
     "abnersajr"
-  ]
+  ],
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cli-welcome": "2.2.2",
+    "log-symbols": "^4.1.0"
+  }
 }
